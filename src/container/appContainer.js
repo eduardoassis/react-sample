@@ -1,7 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Form from '../components/form/'
+import List from '../components/list/'
 
 const AppContainer = ()=> (
-	<div>AppContainer</div>
+	<div>
+		<Form />
+		<List />
+	</div>
 )
 
 
