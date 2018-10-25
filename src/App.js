@@ -3,6 +3,10 @@ import AppContainer from './container/appContainer'
 import './App.css';
 
 class App extends Component {
+
+  state = {
+    productList: []
+  }
   render() {
     return (
       <div className="App">
