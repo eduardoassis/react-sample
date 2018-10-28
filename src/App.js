@@ -15,7 +15,7 @@ class App extends Component {
 
   listProducts(query) {
 
-    const url =`https://api.mercadolibre.com/sites/MLA/search?q=${value}`
+    const url =`https://api.mercadolibre.com/sites/MLA/search?q=${query}`
 
     fetch(url)
     .then((response) => response.json())
@@ -38,7 +38,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <AppContainer {...this.state}  handleSubmit={(e) => this.handleSubmi(te)}/>
+        <AppContainer {...this.state}  handleSubmit={(e) => this.handleSubmit(e)}/>
       </div>
     );
   }
