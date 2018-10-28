@@ -10,7 +10,7 @@ class App extends Component {
   
   handleSubmit(e){
     e.preventDefault()
-    this.getApiProducts(e.target.formSearch.value)
+    this.listProducts(e.target.formSearch.value)
   }
 
   listProducts(query) {
@@ -21,7 +21,7 @@ class App extends Component {
     .then((response) => response.json())
     .then((items) => {
       this.setState({
-        productList: items.map((item) => ({
+        productList: items.results.map((item) => ({
           id: item.id,
           title: item.title,
           price: item.price,
