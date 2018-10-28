@@ -2,9 +2,9 @@ import React from 'react';
 import Form from '../components/form/'
 import List from '../components/list/'
 
-const AppContainer = ()=> (
+const AppContainer = ({handleSubmit})=> (
 	<div>
-		<Form />
+		<Form handleSubmit={handleSubmit} />
 		<List />
 	</div>
 )

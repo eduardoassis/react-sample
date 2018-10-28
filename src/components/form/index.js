@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Form = ({handleSubmite}) => (
+const Form = ({handleSubmit}) => (
 	<div>
-    <form onSubmit={handleSubmite}>
+    <form onSubmit={handleSubmit}>
         <div className="ui action input">
             <input type="text" name="formSearch"/>
             <button className="ui button" >Search</button>

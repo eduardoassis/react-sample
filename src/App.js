@@ -7,10 +7,15 @@ class App extends Component {
   state = {
     productList: []
   }
+  
+  handleSubmit(e){
+    alert(e.target.formSearch.value)
+  }
+
   render() {
     return (
       <div className="App">
-        <AppContainer />
+        <AppContainer  handleSubmit={(e) => this.handleSubmit(e)}/>
       </div>
     );
   }
