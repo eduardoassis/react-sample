@@ -38,7 +38,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <AppContainer  handleSubmit={(e) => this.handleSubmi(te)}/>
+        <AppContainer {...this.state}  handleSubmit={(e) => this.handleSubmi(te)}/>
       </div>
     );
   }
